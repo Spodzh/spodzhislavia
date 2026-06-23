@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форум – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Споджиславие</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="recipes.html">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html" class="active">Форум</a></li>
+      <li><a href="miracles.html">Чудеса</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>Форум – гостевая книга</h1>
+    <div class="subhead">Делитесь мыслями и отзывами</div>
+
+    <!-- Примеры сообщений -->
+    <h2>Последние отзывы</h2>
+    <div class="forum-post">
+      <div class="author">Алексей К.</div>
+      <div class="date">22 июня 2026</div>
+      <div class="text">Вкусил священную трапезу – почувствовал невероятный прилив сил! Споджиславие – это истина.</div>
+    </div>
+    <div class="forum-post">
+      <div class="author">Екатерина М.</div>
+      <div class="date">20 июня 2026</div>
+      <div class="text">Рецепт классической котлеты теперь наш семейный. Спасибо Владиславу IV!</div>
+    </div>
+    <div class="forum-post">
+      <div class="author">Игорь С.</div>
+      <div class="date">18 июня 2026</div>
+      <div class="text">Сегодня на Споджестве был в ресторане – впечатления незабываемые. Обязательно приду ещё.</div>
+    </div>
+
+    <h2>Оставить свой отзыв</h2>
+    <form action="https://formspree.io/f/xdarkrpz" method="POST" style="background:#fffcf5; padding:1.5rem; border-radius:20px; border:1px solid #e6d4bf;">
+      <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" required placeholder="Например, Сподж-Кодер">
+      </div>
+      <div class="form-group">
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" required placeholder="Поделитесь своей историей..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Новое сообщение на форуме">
+      <button type="submit" class="btn-submit">Отправить</button>
+    </form>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
