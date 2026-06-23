@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чудеса – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Споджиславие</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="recipes.html">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html">Форум</a></li>
+      <li><a href="miracles.html" class="active">Чудеса</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>✨ Чудеса и свидетельства</h1>
+    <div class="subhead">Реальные истории исцеления и помощи</div>
+
+    <h2>Свидетельства последователей</h2>
+
+    <div class="miracle-card">
+      <div class="title">Исцеление от болезни</div>
+      <div class="author">— Мария Н., 45 лет</div>
+      <div class="story">«Я болела хронической усталостью. После того, как я начала каждое утро есть священную трапезу, силы вернулись. Через месяц я чувствую себя на 20 лет моложе! Споджиславие — это чудо.»</div>
+    </div>
+
+    <div class="miracle-card">
+      <div class="title">Удача в бизнесе</div>
+      <div class="author">— Сергей В., 37 лет</div>
+      <div class="story">«Сделал котлеты по рецепту Владислава IV перед важной сделкой – и она прошла успешно! Теперь всегда готовлю перед переговорами.»</div>
+    </div>
+
+    <div class="miracle-card">
+      <div class="title">Восстановление отношений</div>
+      <div class="author">— Ольга Д., 29 лет</div>
+      <div class="story">«Мы с мужем были на грани развода. Я приготовила ужин с пюрешкой и котлеткой, прочитала молитву, и он предложил поговорить. Мы помирились. Споджиславие спасло нашу семью.»</div>
+    </div>
+
+    <h2>📝 Расскажи своё чудо</h2>
+    <form action="https://formspree.io/f/xdarkrpz" method="POST" style="background:#fffcf5; padding:1.5rem; border-radius:20px; border:1px solid #e6d4bf;">
+      <div class="form-group">
+        <label for="miracle-name">Ваше имя</label>
+        <input type="text" id="miracle-name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="miracle-title">Заголовок чуда</label>
+        <input type="text" id="miracle-title" name="title" required placeholder="Например, Исцеление от болезни">
+      </div>
+      <div class="form-group">
+        <label for="miracle-story">Ваша история</label>
+        <textarea id="miracle-story" name="story" required placeholder="Опишите, что произошло..."></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Новое свидетельство чуда">
+      <button type="submit" class="btn-submit">Поделиться чудом</button>
+    </form>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
