@@ -9,19 +9,17 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="height: 36px; width: auto; vertical-align: middle; margin-right: 8px;">
-        Споджиславие
-      </a>
-    </div>
+    <div class="logo"><a href="index.html">⚡ Споджиславие</a></div>
     <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html">Главное</a></li>
-      <li><a href="gallery.html">Фотографии</a></li>
       <li><a href="about.html">О нас</a></li>
       <li><a href="news.html" class="active">Новости</a></li>
-      <li><a href="faq.html">Вопросы</a></li>
+      <li><a href="recipes.html">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html">Форум</a></li>
+      <li><a href="miracles.html">Чудеса</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
   </header>
@@ -68,11 +66,9 @@
   <script>
     const toggle = document.getElementById('menuToggle');
     const nav = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => { toggle.classList.toggle('active');
-      nav.classList.toggle('open'); });
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
     nav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => { toggle.classList.remove('active');
-        nav.classList.remove('open'); });
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
     });
   </script>
 </body>
