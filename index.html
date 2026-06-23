@@ -9,19 +9,17 @@
 </head>
 <body>
   <header class="header">
-    <div class="logo">
-      <a href="index.html">
-        <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="height: 36px; width: auto; vertical-align: middle; margin-right: 8px;">
-        Споджиславие
-      </a>
-    </div>
+    <div class="logo"><a href="index.html">⚡ Споджиславие</a></div>
     <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Главное</a></li>
-      <li><a href="gallery.html">Фотографии</a></li>
       <li><a href="about.html">О нас</a></li>
       <li><a href="news.html">Новости</a></li>
-      <li><a href="faq.html">Вопросы</a></li>
+      <li><a href="recipes.html">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html">Форум</a></li>
+      <li><a href="miracles.html">Чудеса</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
   </header>
@@ -48,7 +46,21 @@
       <li><strong>Устраивай общие трапезы</strong> в день Споджества (18 июня).</li>
     </ol>
 
-    <p style="margin-top:1.5rem; text-align:center;">
+    <!-- Блок подписки на главной -->
+    <div style="background:#fffcf5; border-radius:24px; padding:2rem; margin:2rem 0; border:2px solid #e6d4bf; text-align:center;">
+      <h3 style="margin-top:0;">📬 Подпишись на «Сподж-вестник»</h3>
+      <p style="margin-bottom:1rem;">Получай новые рецепты, анонсы событий и чудеса каждую неделю.</p>
+      <form action="https://formspree.io/f/your-endpoint" method="POST" style="max-width:400px; margin:0 auto;">
+        <div class="form-group" style="display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center;">
+          <input type="email" name="email" placeholder="Ваш e-mail" required style="flex:1; min-width:200px; padding:0.8rem 1rem; border:2px solid #e6d4bf; border-radius:60px; background:#fff;">
+          <button type="submit" class="btn-submit" style="padding:0.8rem 2rem;">Подписаться</button>
+        </div>
+        <input type="hidden" name="_subject" value="Новая подписка на Сподж-вестник">
+      </form>
+      <p style="font-size:0.9rem; color:#8b735f; margin-top:0.5rem;">Мы не спамим, только полезное.</p>
+    </div>
+
+    <p style="text-align:center;">
       <a href="about.html" class="btn-gold">Узнать больше об учении</a>
     </p>
 
