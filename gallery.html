@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фотографии – Споджиславие</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фотографии – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><a href="index.html">⚡ Споджиславие</a></div>
-        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Главное</a></li>
-            <li><a href="gallery.html" class="active">Фотографии</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="faq.html">Вопросы</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </header>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="height: 36px; width: auto; vertical-align: middle; margin-right: 8px;">
+        Споджиславие
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="gallery.html" class="active">Фотографии</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="faq.html">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
 
-    <main class="container">
-        <h1>Фотогалерея</h1>
-        <div class="subhead">Образы Владислава IV и священной трапезы</div>
+  <main class="container">
+    <h1>Фотогалерея</h1>
+    <div class="subhead">Образы Владислава IV и священной трапезы</div>
 
-        <div class="gallery-grid">
-            <img src="https://i.ibb.co/FqWRVwMW/photo-2026-06-23-23-48-04.jpg" alt="Владислав IV">
-            <img src="https://i.ibb.co/RkR70GJD/image.png" alt="Владислав IV в пути">
-            <img src="https://i.ibb.co/YF2M1bLS/image.png" alt="Владислав IV и трапеза">
-            <img src="https://i.ibb.co/39dbjGkB/image.png" alt="Священная пюрешка с котлеткой">
-        </div>
-        <p style="text-align:center; color:#8b735f;">Священные изображения и символы нашей веры.</p>
+    <div class="gallery-grid">
+      <img src="https://i.ibb.co/FqWRVwMW/photo-2026-06-23-23-48-04.jpg" alt="Владислав IV">
+      <img src="https://i.ibb.co/RkR70GJD/image.png" alt="Владислав IV в пути">
+      <img src="https://i.ibb.co/YF2M1bLS/image.png" alt="Владислав IV и трапеза">
+      <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Священная пюрешка с котлеткой">
+    </div>
+    <p style="text-align:center; color:#8b735f;">Священные изображения и символы нашей веры.</p>
 
-        <div class="footer">
-            <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
-        </div>
-    </main>
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
+    </div>
+  </main>
 
-    <script>
-        const toggle = document.getElementById('menuToggle');
-        const nav = document.getElementById('navLinks');
-        toggle.addEventListener('click', () => { toggle.classList.toggle('active');
-            nav.classList.toggle('open'); });
-        nav.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => { toggle.classList.remove('active');
-                nav.classList.remove('open'); });
-        });
-    </script>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active');
+      nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active');
+        nav.classList.remove('open'); });
+    });
+  </script>
 </body>
 </html>
