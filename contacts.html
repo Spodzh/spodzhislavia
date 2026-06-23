@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Сподж</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="gallery.html">Фотографии</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="faq.html">Вопросы</a></li>
+      <li><a href="contacts.html" class="active">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>Связь с <span class="gold">Эхом</span></h1>
+    <div class="subhead">Присоединяйтесь к нашему сообществу</div>
+
+    <p style="text-align:center; font-size:1.2rem; margin-bottom:2rem;">Следите за новостями и делитесь своими вибрациями в социальных сетях:</p>
+
+    <div class="social-links">
+      <a href="https://t.me/ssspodzh" target="_blank" class="social-btn">
+        <i class="fab fa-telegram"></i> Telegram
+      </a>
+      <a href="https://www.tiktok.com/@spodzh" target="_blank" class="social-btn">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+      <a href="https://vk.com/vladkalinovski" target="_blank" class="social-btn">
+        <i class="fab fa-vk"></i> ВКонтакте
+      </a>
+    </div>
+
+    <div style="margin-top:3rem; background:#1b151f; border-radius:20px; padding:1.8rem; border:1px solid #3d2e44;">
+      <h3 style="margin-top:0;">📩 Напишите нам</h3>
+      <p>Вы также можете оставить голосовое сообщение в нашем Telegram-канале — мы услышим каждого.</p>
+      <p><strong>Сподж-Отец</strong> лично отвечает на самые важные вопросы по средам.</p>
+    </div>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Живое Эхо</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>

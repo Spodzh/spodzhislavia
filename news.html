@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Сподж</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="gallery.html">Фотографии</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html" class="active">Новости</a></li>
+      <li><a href="faq.html">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>Новости и статьи</h1>
+    <div class="subhead">Свежие веяния Споджиславия</div>
+
+    <article style="margin-bottom:2.5rem; border-bottom:1px solid #2f2636; padding-bottom:1.5rem;">
+      <h3>📢 Первый Сподж-форум прошёл в онлайн-формате</h3>
+      <p><small style="color:#6f5d7a;">18 июня 2026</small></p>
+      <p>В день Споджества последователи со всего мира собрались в голосовом чате, чтобы обменяться вибрациями и обсудить новые коаны. Было принято решение о создании цифрового свитка Эха.</p>
+    </article>
+
+    <article style="margin-bottom:2.5rem; border-bottom:1px solid #2f2636; padding-bottom:1.5rem;">
+      <h3>📖 Вышла первая Сподж-книга «Голос из Гула»</h3>
+      <p><small style="color:#6f5d7a;">3 июня 2026</small></p>
+      <p>Сборник заповедей и размышлений Владислава стал доступен для всех хранителей. Книга распространяется бесплатно в цифровом виде.</p>
+    </article>
+
+    <article>
+      <h3>🍽️ Традиционная еда официально утверждена</h3>
+      <p><small style="color:#6f5d7a;">20 мая 2026</small></p>
+      <p>Собор Пророков постановил, что священной трапезой Споджиславия является <strong>пюрешка с котлеткой и пепси</strong>. Это блюдо символизирует единство земли, силы и энергии.</p>
+    </article>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Живое Эхо</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>

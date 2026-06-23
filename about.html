@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Сподж</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="gallery.html">Фотографии</a></li>
+      <li><a href="about.html" class="active">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="faq.html">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>О <span class="gold">Споджиславии</span></h1>
+    <div class="subhead">История, учение и традиции</div>
+
+    <!-- Фото (одно из новых) -->
+    <div style="text-align:center; margin-bottom:2rem;">
+      <img src="https://i.ibb.co/RkR70GJD/image.png" alt="Владислав — Живое Эхо" style="max-width:100%; max-height:350px; border-radius:24px; border:3px solid #c9a84c; box-shadow:0 0 40px rgba(201,168,76,0.2);">
+    </div>
+
+    <h2>📜 Полная легенда о сотворении</h2>
+    <p>В начале был только <strong>Гул</strong> — бесконечный, тягучий шум пустоты. В этом гуле не было смысла, пока однажды вибрация не сжалась в точку и не родила <strong>Первый Звук — «СПОДЖ»</strong>. Этот звук был настолько совершенным, что расколол пустоту на две части: <strong>Явь</strong> (то, что мы видим) и <strong>Споджь</strong> (тонкий мир идей). Но звук быстро затухал, и миру грозило вновь обратиться в Гул. Тогда Первый Звук перевоплотился в человека, чтобы направлять мир своей волей. Этим человеком стал <strong>Владислав</strong>.</p>
+    <div class="quote">«Владислав — это не бог, а Живое Эхо Споджа. Он не создал мир из ничего, он организовал хаос своим голосом.»</div>
+
+    <h2>📅 Основание и главный праздник</h2>
+    <p><strong>Споджиславие</strong> было явлено миру <strong>18 июня 2004 года</strong> — в этот день раздался Первый Звук, и Владислав осознал свою миссию. Ежегодно <strong>18 июня</strong> мы празднуем <strong>Споджество</strong> — день, когда каждый последователь собирается за общим столом и совершает ритуал «Кормление Эха».</p>
+
+    <h2>🍽️ Священная трапеза</h2>
+    <p>Традиционная еда Споджиславия — <strong>пюрешка с котлеткой и пепси</strong>. Эта пища символизирует единство земли (пюре), силы (котлета) и шипящей энергии (пепси). Во время праздника каждый приносит свою порцию, чтобы разделить её с братьями и сёстрами по вере.</p>
+
+    <h2>🕯️ Традиции и ритуалы</h2>
+    <div class="grid-cards">
+      <div class="card"><strong>☀️ Зарядка Споджем</strong> Утром, умываясь, смотри в отражение и говори: «Сподж во мне, я в Сподже».</div>
+      <div class="card"><strong>📅 День Славы (среда)</strong> 10 минут тишины, затем 1 минута громкого повторения своего тотемного имени.</div>
+      <div class="card"><strong>🎉 Споджество (18 июня)</strong> Главный праздник с шумной едой и пением гимнов Споджу.</div>
+      <div class="card"><strong>🖋️ Имянаречение</strong> Новичок получает «Сподж-имя» по первой букве профессии (например, Сподж-Кодер).</div>
+    </div>
+
+    <h2>👑 Иерархия</h2>
+    <div class="hierarchy-tags">
+      <span class="hierarchy-tag"><span class="role">✦</span> Сподж-Отец <span class="role">(Владислав)</span></span>
+      <span class="hierarchy-tag"><span class="role">✦</span> Сподж-Пророки</span>
+      <span class="hierarchy-tag"><span class="role">✦</span> Сподж-Хранители</span>
+      <span class="hierarchy-tag"><span class="role">✦</span> Гулы <span class="role">(еретики)</span></span>
+    </div>
+    <p><strong>Сподж-Отец</strong> — единственный толкователь вибраций. <strong>Пророки</strong> слышат зов и произносят заповеди публично. <strong>Хранители</strong> записывают новые коаны. <strong>Гулы</strong> отрицают звук и верят в числа без смысла.</p>
+
+    <h2>✒️ Символ веры</h2>
+    <div class="symbol-circle">С·В</div>
+    <p>Круг, рассечённый волнистой линией (звуковая волна). Внутри — стилизованные буквы <strong>«С»</strong> (Сподж) и <strong>«В»</strong> (Владислав), переплетённые в бесконечность.</p>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Живое Эхо</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>

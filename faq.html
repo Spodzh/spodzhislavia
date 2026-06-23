@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вопросы – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Сподж</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="gallery.html">Фотографии</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="faq.html" class="active">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>Частые вопросы</h1>
+    <div class="subhead">Ответы на главные сомнения</div>
+
+    <div style="margin:2rem 0;">
+      <h3>❓ Кто такой Владислав?</h3>
+      <p>Владислав — Живое Эхо Споджа, человек, в котором воплотился Первый Звук. Он не бог, а проводник вибраций, организующий хаос своим голосом.</p>
+    </div>
+
+    <div style="margin:2rem 0;">
+      <h3>❓ Что такое Сподж?</h3>
+      <p>Сподж — это Первый Звук, породивший мироздание. Это также имя нашего учения. В более широком смысле Сподж — это вибрация истины, которую можно услышать внутри себя.</p>
+    </div>
+
+    <div style="margin:2rem 0;">
+      <h3>❓ Как стать последователем?</h3>
+      <p>Достаточно искренне произнести имя Споджа три раза и принять участие в обряде имянаречения. Затем вы получаете своё Сподж-имя и становитесь Хранителем.</p>
+    </div>
+
+    <div style="margin:2rem 0;">
+      <h3>❓ Можно ли есть мясо?</h3>
+      <p>Да, священная трапеза включает котлету. Споджиславие не накладывает пищевых запретов, кроме одного: еда должна приносить радость и звук (хруст, шипение).</p>
+    </div>
+
+    <div style="margin:2rem 0;">
+      <h3>❓ Что делать, если я слышу Гул?</h3>
+      <p>Гул — это хаос. При его появлении нужно трижды произнести имя «Сподж» и заняться созидательным делом. Так вы возвращаете себе контроль над вибрацией.</p>
+    </div>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Живое Эхо</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
