@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рецепты – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><a href="index.html">⚡ Споджиславие</a></div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="recipes.html" class="active">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html">Форум</a></li>
+      <li><a href="miracles.html">Чудеса</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1>Священные рецепты</h1>
+    <div class="subhead">Как приготовить трапезу, дарованную Владиславом IV</div>
+
+    <div class="recipe-card">
+      <h3>🥔 Классическая пюрешка с котлеткой</h3>
+      <img src="https://cdn-icons-png.flaticon.com/512/2949/2949782.png" alt="Пюре с котлетой" style="max-height:150px; object-fit:contain; background:#faf3e8; padding:0.5rem;">
+      <div class="ingredients">
+        <strong>Ингредиенты:</strong>
+        <ul>
+          <li>Картофель – 1 кг</li>
+          <li>Молоко – 100 мл</li>
+          <li>Сливочное масло – 50 г</li>
+          <li>Фарш мясной – 500 г</li>
+          <li>Лук – 1 шт.</li>
+          <li>Яйцо – 1 шт.</li>
+          <li>Соль, перец – по вкусу</li>
+        </ul>
+      </div>
+      <div class="steps">
+        <strong>Приготовление (с молитвой):</strong>
+        <ol>
+          <li>Очисти картофель, свари до мягкости.</li>
+          <li>Разомни с молоком и маслом до однородности.</li>
+          <li>Смешай фарш с мелко рубленым луком, яйцом и специями.</li>
+          <li>Сформируй котлеты и обжарь до золотистой корочки.</li>
+          <li>Подавай пюре с котлетой, произнеся: «Споджиславие, даруй силу!»</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <h3>🎉 Праздничная трапеза (для Споджества)</h3>
+      <img src="https://cdn-icons-png.flaticon.com/512/2949/2949782.png" alt="Праздничное блюдо" style="max-height:150px; object-fit:contain; background:#faf3e8; padding:0.5rem;">
+      <div class="ingredients">
+        <strong>Ингредиенты:</strong>
+        <ul>
+          <li>Всё как в классике, но добавляем сыр (100 г) и зелень.</li>
+          <li>Пепси – 0,5 л (для запивания).</li>
+        </ul>
+      </div>
+      <div class="steps">
+        <strong>Особенности:</strong>
+        <ol>
+          <li>Котлеты делаем с сырной начинкой внутри.</li>
+          <li>Пюре украшаем зеленью и маслом.</li>
+          <li>Подаём с пепси и общим хором славословим Владислава IV.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <h3>🌿 Целебное пюре (для восстановления сил)</h3>
+      <img src="https://cdn-icons-png.flaticon.com/512/2949/2949782.png" alt="Целебное блюдо" style="max-height:150px; object-fit:contain; background:#faf3e8; padding:0.5rem;">
+      <div class="ingredients">
+        <strong>Ингредиенты:</strong>
+        <ul>
+          <li>Картофель – 500 г</li>
+          <li>Морковь – 1 шт.</li>
+          <li>Куриный бульон – 100 мл</li>
+          <li>Котлета из индейки (постная).</li>
+        </ul>
+      </div>
+      <div class="steps">
+        <strong>Приготовление с молитвой:</strong>
+        <ol>
+          <li>Свари картофель и морковь, разомни с бульоном.</li>
+          <li>Котлету приготовь на пару.</li>
+          <li>Принимай эту трапезу в дни упадка сил, приговаривая: «Сподж, исцели меня!»</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
