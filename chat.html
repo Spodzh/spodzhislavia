@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чат – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="height:32px; width:auto; vertical-align:middle; margin-right:8px;">
+        Споджиславие
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="recipes.html">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html">Форум</a></li>
+      <li><a href="miracles.html">Чудеса</a></li>
+      <li><a href="polls.html">Опросы</a></li>
+      <li><a href="chat.html" class="active">Чат</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
+      <li><a href="statistics.html">Статистика</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <div style="text-align:center; margin-bottom:0.5rem;">
+      <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="max-width:150px; height:auto;">
+    </div>
+    <h1>💬 Онлайн-чат</h1>
+    <div class="subhead">Общайся с единомышленниками в реальном времени</div>
+
+    <div style="background:#fffcf5; border-radius:24px; padding:2rem; margin:2rem 0; border:2px solid #e6d4bf;">
+      <h2 style="margin-top:0;">Присоединяйся к нашему сообществу</h2>
+      <p>Здесь ты можешь обсудить рецепты, поделиться опытом и просто пообщаться с другими последователями Споджиславия.</p>
+      <p style="font-weight:600;">Выбери удобную платформу:</p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; margin:1.5rem 0;">
+        <a href="https://t.me/ssspodzh" target="_blank" class="social-btn" style="font-size:1.1rem; padding:0.8rem 2.5rem;">
+          <i class="fab fa-telegram"></i> Telegram-чат
+        </a>
+        <a href="https://discord.gg/ваша_ссылка" target="_blank" class="social-btn" style="font-size:1.1rem; padding:0.8rem 2.5rem;">
+          <i class="fab fa-discord"></i> Discord-сервер
+        </a>
+      </div>
+      <p><em>Если у тебя нет аккаунта в этих сервисах, скачай приложение и присоединяйся!</em></p>
+    </div>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
