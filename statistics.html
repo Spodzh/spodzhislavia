@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статистика – Споджиславие</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="height:32px; width:auto; vertical-align:middle; margin-right:8px;">
+        Споджиславие
+      </a>
+    </div>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Главное</a></li>
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="recipes.html">Рецепты</a></li>
+      <li><a href="calendar.html">Календарь</a></li>
+      <li><a href="forum.html">Форум</a></li>
+      <li><a href="miracles.html">Чудеса</a></li>
+      <li><a href="polls.html">Опросы</a></li>
+      <li><a href="chat.html">Чат</a></li>
+      <li><a href="ask.html">Вопросы</a></li>
+      <li><a href="statistics.html" class="active">Статистика</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <div style="text-align:center; margin-bottom:0.5rem;">
+      <img src="https://i.ibb.co/d4G3b1pc/21312.png" alt="Споджиславие" style="max-width:150px; height:auto;">
+    </div>
+    <h1>📊 Статистика сообщества</h1>
+    <div class="subhead">Цифры, которые показывают наш рост</div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:1.5rem; margin:2rem 0;">
+      <div style="background:#fffcf5; border-radius:20px; padding:1.5rem; text-align:center; border:2px solid #e6d4bf;">
+        <div style="font-size:3rem; font-weight:700; color:#b8863a;">3</div>
+        <div style="font-weight:600;">Подписчиков на рассылку</div>
+      </div>
+      <div style="background:#fffcf5; border-radius:20px; padding:1.5rem; text-align:center; border:2px solid #e6d4bf;">
+        <div style="font-size:3rem; font-weight:700; color:#b8863a;">5</div>
+        <div style="font-weight:600;">Зарегистрированных чудес</div>
+      </div>
+      <div style="background:#fffcf5; border-radius:20px; padding:1.5rem; text-align:center; border:2px solid #e6d4bf;">
+        <div style="font-size:3rem; font-weight:700; color:#b8863a;">4</div>
+        <div style="font-weight:600;">Отзывов на форуме</div>
+      </div>
+      <div style="background:#fffcf5; border-radius:20px; padding:1.5rem; text-align:center; border:2px solid #e6d4bf;">
+        <div style="font-size:3rem; font-weight:700; color:#b8863a;">3</div>
+        <div style="font-weight:600;">Священных рецептов</div>
+      </div>
+      <div style="background:#fffcf5; border-radius:20px; padding:1.5rem; text-align:center; border:2px solid #e6d4bf;">
+        <div style="font-size:3rem; font-weight:700; color:#b8863a;">6</div>
+        <div style="font-weight:600;">Событий в календаре</div>
+      </div>
+      <div style="background:#fffcf5; border-radius:20px; padding:1.5rem; text-align:center; border:2px solid #e6d4bf;">
+        <div style="font-size:3rem; font-weight:700; color:#b8863a;">12</div>
+        <div style="font-weight:600;">Всего страниц на сайте</div>
+      </div>
+    </div>
+
+    <div style="background:#fffcf5; border-radius:24px; padding:1.5rem; border:2px solid #e6d4bf; margin:2rem 0;">
+      <h3 style="margin-top:0;">📈 Мы растем вместе!</h3>
+      <p>Эти цифры обновляются вручную, чтобы отражать реальное состояние сообщества. Следи за нашими достижениями и вноси свой вклад!</p>
+    </div>
+
+    <div class="footer">
+      <p>Споджиславие © 2004–2026 — <span class="gold">Свет трапезы</span></p>
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); nav.classList.toggle('open'); });
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => { toggle.classList.remove('active'); nav.classList.remove('open'); });
+    });
+  </script>
+</body>
+</html>
